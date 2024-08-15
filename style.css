@@ -1,149 +1,194 @@
-*{
+/* * {
     margin: 0;
     padding: 0;
-}
-:root{
-    --white: #FFFFFF;
-    --dark: #000000;
-    --gray: #222;
-    --tomato: #E6533C; 
-    --lightgray: rgba(255, 255, 255, .1);
-}
-html{
-    font-size: 16px;
+    box-sizing: border-box;
+} */
+
+.inter-normal {
     font-family: "Inter", sans-serif;
-    background-color: var(--dark);
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-/* common class */
-.btn-first, .btn-second{
-    color: var(--white);
-    background-color: var(--tomato);
 
-    font-size: 1.1rem;
+/* shared styles */
+
+.text-primary,.footer-fitness h2 {
+
+    color: rgb(230, 83, 60);
+    
+
+}
+
+.btn-primary {
     font-weight: 600;
-    padding: 12px 35px;
-    margin-top: 15px;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(230, 83, 60);
 
-    border-radius: 42px;
-}
-.btn-first{
-    background-color: var(--tomato);
     border: none;
-}
-.btn-second{
-    background-color: var(--dark);
-    border: 1px solid var(--white);
-    margin-left: 10px;
+    border-radius: 1.5rem;
+
+    padding: 1rem 2.5rem;
 }
 
-      /* description and titles */
-.description-one, .description-two{
-    color: var(--white);
-    opacity: .5;
-
-    font-weight: 400;
-    line-height: 150%;
-}
-.description-two{
-    font-size: .88rem;
-}
-.header-title, .section-title, .section-subtitle{
-    color: var(--white);
-    font-weight: 900;
-    line-height: 120%;
-}
-.header-title{
-    font-size: 4.5rem;
-}
-.section-title{
-    font-size: 3rem;
-    text-align: center;
-}
-.section-subtitle{
-    font-size: 1.75rem;
-}
-   /* others */
-.flex{
+.flex {
     display: flex;
 }
-.grid{
-    display: grid;
+
+.white {
+    color: rgb(255, 255, 255);
+
+}
+
+.grey {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.grey option {
+    background-color: white;
+    color: grey;
+}
+
+.light,
+.habit-cards p,
+.bmi-title p,
+.bmi-calculate p,
+.team-title p ,
+.member-info span,
+.app-info p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+#download {
+    background: none;
+    border: 2px solid;
+}
+
+header,
+.habit,
+.extra {
+
+
+    margin: 57px 190px 57px 190px;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.bg-header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
 }
 
 
 
-nav, .banner, #section-one, #section-two, #section-three,
-#chart-table/* #section-four>div>div */, #section-five, footer>div{
-    max-width: 80%;
-}
+/* nav style */
 
-nav, .banner{
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-#section-one, #section-two, #section-three, #section-four,
-#section-five{
-    margin: 0 auto;
-    margin-bottom: 100px;
-}
+nav {
+    display: flex;
 
-
-
-/* header styles */
-header{
-    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0) 100%);
-}
-             /* nav styles */
-nav{
-    padding-top: 25px;
     justify-content: space-between;
     align-items: center;
-}
-nav > h3{
-    color: var(--tomato);
-    font-size: 2.25rem;
-    font-style: italic;
-    font-weight: 800;
+
+
 }
 
-nav > ul{
-    padding: 12px 4px;
-    border-radius: 45px;
-    border: 2px solid var(--lightgray);
+.nav h3 {
+    font-size: 2.94rem;
 }
-nav > ul > li{
+
+nav ul {
+    display: flex;
+
     list-style: none;
-}
-nav > ul > li > a{
-    color: var(--white);
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-decoration: none;
 
-    margin-right: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+
+    gap: 3rem;
+    border-radius: 1.5rem;
+
+    padding: 0.6rem;
+
+
 }
-#home{
-    background-color: var(--tomato);
-    padding: 8px 20px;
-    border-radius: 45px;
+
+nav ul a ,footer ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
 }
-       /* banner */
-#shape{
-    font-size: 4.8rem;
+.menu{
+    display:none;
+   
+  }
+
+.home {
+    background-color: rgb(230, 83, 60);
+    padding: .5rem 1.25rem;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    margin-left: -0.5rem;
+
+}
+
+/* banner */
+.hero-container {}
+
+.hero-content h3 {
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 1.2;
+
+
+}
+
+.design-text {
+    font-size: 6rem;
     font-weight: 400;
     font-family: 'Parisienne', cursive;
 }
-.banner{
-    justify-content: space-between;
-    align-items: center;
-    gap: 15%;
-}
-#banner-title{
-    max-width: 800px;
+
+.hero-description {
+    margin-top: 28px;
+    margin-bottom: 28px;
 }
 
-.videos{
+
+#tuto-number,
+#free-number {
+    color: var(--white);
+    font-weight: 900;
+    line-height: 100%;
+    margin-bottom: 5px;
+}
+
+#tuto-number {
+    font-size: 1.5rem;
+}
+
+#free-number {
+    font-size: 2.5rem;
+}
+
+#tutorial {
+    gap: 15px;
+    position: relative;
+    margin-top: -150px;
+    margin-left: -100px;
+}
+
+#free {
+    position: relative;
+    top: -400px;
+    right: -200px;
+}
+
+.videos {
     background-color: rgba(48, 48, 48, 0.54);
     border: 1px solid var(--lightgray);
     border-radius: 8px;
@@ -152,260 +197,404 @@ nav > ul > li > a{
 }
 
 
-#tuto-number, #free-number{
-    color: var(--white);
-    font-weight: 900;
-    line-height: 100%;
-    margin-bottom: 5px;
-}
-#tuto-number{
-    font-size: 1.5rem;
-}
-#free-number{
-    font-size: 2.5rem;
-}
-
-#tutorial {
-    gap: 15px;
-    position: relative; 
-    margin-top: -150px;
-    margin-left: -100px;
-}
-
-#free{
-    position: relative;
-    top: -400px;
-    right: -200px;
-}
-
-.banner>div>h3, .banner>div>p{
-    margin-bottom: 15px;
-}
-
-/* section one - change your habit */
-
-#section-one>p{
-    max-width: 60%;
-    text-align: center;
-    margin: 10px auto;
-}
-#section-one>div{
-    margin-top: 50px;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 8%;
-}
-
-
-.habit>img{
-    width: 100%;
-    border-radius: 50%;
-}
-.habit>p{
-    text-align: center;
-}
-.habit-title{
-    color: var(--white);
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-.habit>img, .habit>p{
-    margin-bottom: 5px;
-}
-
-/* section two - run extra */
-#section-two{
-    background-color: var(--gray);
-    justify-content: space-between;
+/* Change Habit styles */
+.habit-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    gap: 1rem;
+}
+
+.habit-title h3,
+.bmi-title h3 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+
+.habit-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 58px;
+    column-gap: 12%;
+
+}
+
+.habit-cards h3,
+p {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+
+.habit-cards img {
+    border-radius: 50%;
+    margin-bottom: 2rem;
+
+}
+
+/* extra section */
+.extra,
+.bmi-bg {
+    border-radius: 1.1rem;
+    background-color: rgb(34, 34, 34);
+}
+
+.extra-contant {
+    margin-top: 2.5rem;
+}
+
+.extra-container {
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.extra-container h3 {
+    font-size: 900;
+    font-size: 3rem;
+    margin-left: 3.5rem;
+}
+
+#achieve {
+
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+
+}
+
+#extra-btn {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.extra-container img {
+    max-width: 366px;
+    margin-right: 2rem;
+    border-radius: 1.1rem;
+
+}
+
+/* bmi section */
+.bmi-items {
+    justify-content: space-between;
+
+    margin: 50px 190px;
+
+}
+
+.bmi-title {
+    text-align: center;
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+}
+
+
+.bmi-chart h3,
+.bmi-calculate h3 {
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+
+}
+
+.bmi-chart {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bmi-calculate {
+    margin-top: 50px;
+}
+
+.bmi-chart td,
+th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 1rem;
+}
+
+.bmi-bg {
+
+    margin: 0;
+}
+
+.calc-description {
+    position: relative;
+    bottom: 2rem;
+}
+
+
+
+.form-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+}
+
+
+.form input,
+.form select {
+    padding: 0.6rem;
+    font-size: 1rem;
+
+    border-radius: .2rem;
+    border: none;
+
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bmi-calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 1.6rem;
+    padding: 1.5rem;
+
+}
+
+/* team section */
+
+#meet{
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+.team-title h3,p{
+    text-align: center;
+}
+.team-title p{
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
+}
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 190px;
+    margin-right: 190px;
+    background: rgba(255, 255, 255, 0.1);
+  
+
+   column-gap: 1.5rem;
+   row-gap: 1rem;
+   padding: 2.5rem 1rem;
+   border-radius: 1rem;
+   padding-bottom: 0rem;
   
 }
-#section-two>div, #section-two>img{
-    margin: 20px 20px 20px 40px;
-    max-width: 40%;
-}
-#section-two>img{
-    border-radius: 8px;
-}
-#section-two>div>h4, #section-two>div>p{
-    text-align: left;
-    margin-bottom: 5px;
-}
-#section-two button{
-    padding: 12px 50px;
-}
 
-
-/* section four */
-#section-four>h4, #section-four>p{
-    width: 55%;
-    margin: 0 auto;
-    text-align: left;
-    margin-bottom: 5px;
-}
-#section-four>div{
-    background-color: var(--gray);
-    margin-top: 50px;
-    padding: 50px 0;
-}
-#chart-table{
-    width: 80%;
-    margin: 0 auto;
-    /* background-color: red; */
-}
-#left, #right{
-    width: 50%;
-}
-    /* table - left part */
-#left>h4{
-    margin-bottom: 40px;
-}
-#left>table{
-    border-collapse: collapse;
-}
-#left td, #left th{
-    border: 1px solid var(--lightgray);
-    padding: 8px 25px;
-}
-#thead{
-    text-align: left;
-    opacity: 1;
-}
-
-    /* input form */
-#right>h4, #right>p{
-    margin-bottom: 10px;
-}
-#right>div{
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 25px;
-}
-.input-box:nth-child(2n){
-    justify-content: end;
-}
-.input-box{
-    display: flex;
-    flex-wrap: wrap;
-    width: 48%;
-    margin-bottom: 10px;
-}
-.input-box input{
+.member img {
     width: 100%;
-    border-radius: 5px;
-    padding: 10px 10px;
-    background-color: var(--lightgray);
-    border: none;
-}
-.input-box:nth-child(5){
-    width: 100%;
-}
-
-#right button{
-    margin-top: 20px;
-    padding: 12px 50px;
-}
-
-/* section five */
-#section-five>h4, #section-five>p{
-    width: 55%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    text-align: center;
-}
-#section-five>div{
-    background-color: var(--lightgray);
-    margin-top: 50px;
-    border-radius: 18px;
-    grid-template-columns: repeat(3,1fr);
-    padding: 15px;
-    gap: 15px;
-}
-
-#trainer>div{
-    height: 250px;
-    border-radius: 18px;
-}
-.trainer-des{
-    color: var(--white);
-    font-size: 1.25rem;
-    font-weight: 900;
-
-    padding: 0 15px;
-    margin-top: 200px;
-}
-#trainer p{
-    padding: 0 15px;
-}
-
-#trainer-one{
-    background-image: url('images/trainer1.png');
-}
-#trainer-two{
-    background-image: url('images/trainer2.png');
-}
-#trainer-three{
-    background-image: url('images/trainer3.png');
-}
-#trainer-four{
-    background-image: url('images/trainer4.png');
-}
-#trainer-five{
-    background-image: url('images/trainer5.png');
-}
-#trainer-six{
-    background-image: url('images/trainer6.png');
-}
-#trainer-one, #trainer-two, #trainer-three, #trainer-four,
-#trainer-five, #trainer-six{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: red;
+    height: 17rem;
+    border-radius: 1rem;
    
 }
 
-
-/* footer section */
-footer{
-    background-color: var(--lightgray);
+.member-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    bottom: 4.5rem;
+    left: 1.5rem;
 }
-footer>div{
-    margin: 0 auto;
-    padding: 45px 0;
-    border-bottom: 2px solid var(--lightgray);
-}
-
-#footer-left, #footer-right{
-    width: 50%;
+.member-info h5,.app-info h3 {
+    font-weight: 900;
+    font-size: 1.2rem;
 }
 
-   /* left part */
-#footer-left>h4{
-    color: var(--tomato);
-    font-weight: 800;
-    font-size: 4rem;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-#footer-left p{
-    width: 80%;
-}
-
-   /* right part */
-#footer-right>div{
-    width: 50%;
-}
-#footer-right a{
-    text-decoration: none;
-    margin-bottom: 5px;
-}
-#footer-right h4, #footer-right p{
-    margin-bottom: 10px;
-}
-
-footer>p{
+/* unique section */
+/* Pricing section  */
+.price-contents{
     text-align: center;
-    padding: 30px;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 80px;
+  }
+  .pricing-cards-lists{
+    max-width: 1040px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    gap: 100px;
+    margin-top: 25px;
+    /* display: flex;
+    flex-direction: column; */
+
+  }
+  .pricing-card{
+    background-color: hsla(79, 6%, 64%, 0.7);
+    padding: 55px 55px;
+    margin-top: 3px;
+    border-radius: 10px;
+  }
+  
+   .pricing-card>ul{
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  
+  .pricing-card > ul li{
+    font-size: 14px;
+  }
+  
+  .pricing-img{
+      width: 45px;
+      margin-left: 7px;
+      margin-top: 6px;
+  }
+  .pricing-shape {
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    border-radius: 60%;
+    place-items: center;
+    margin-bottom: 1rem;
+  }
+  .pricing-title,.pricing-number{
+    font-size: 19px;
+    font-weight: 600;
+  }
+  
+  .pricing-title{
+    color: #383838;
+    margin-bottom: 1rem;
+  }
+  .pricing-card{
+    display: grid;
+  }
+  .pricing-number{
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-list{
+  
+    row-gap: 1.5rem;
+
+  }
+  .pricing-btn{
+    background: rgb(230, 83, 60);
+    padding: 20px;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .pricing-item{
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+  }
+
+  /* .trainer img {
+    width: 270px;
+    height: 180px;
+    border-radius: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-size: cover;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  }
+
+  .trainer {
+    color: rgba(255, 255, 255, 0.5);
+  } */
+  .pricing-list
+  .pricing-item i{
+    color: rgb(230, 83, 60);
+  }
+  .pricing-item-opacity{
+    opacity: 0.3;
+  }
+  .pricing-btn{
+    background-color: #ffffff3d;
+  }
+  .pricing-btn:hover{
+    background: rgb(230, 83, 60);
+  }
+  
+  .pricing-card-active{
+    background: rgb(230, 83, 60);
+    border: 2px solid  rgba(230, 83, 60, 0.432);;
+  
+  }
+  
+  .pricing-card-active .pricing-shape{
+    background-color: rgba(56, 56, 56, 0.089);
+  }
+  
+  .pricing-card-active .pricing-item i{
+    color: rgba(10, 7, 7, 0.733);
+  }
+  
+  .pricing-card-active .pricing-title,
+  .pricing-card-active .pricing-number,
+  .pricing-card-active .pricing-item{
+    color: black;
+  }
+  
+  .pricing-card-active .pricing-btn:hover{
+    background-color: black;
+  }
+  
+
+/* footer */
+.footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+    margin-top: 4.5rem;
+}
+.footer-list{
+   list-style: none;
+   display: grid;
+   gap: 1rem;
+  
+}
+.footer-list a{
+    color: rgba(255, 255, 255, 0.5);
+   
 }
 
+.footer-fitness h2{
+    font-size: 4.5rem; ;
+    font-weight:800 ;
+
+}
+.footer-contents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 70px 190px;
+    gap: 20px;
+
+}
+.footer-fitness p{
+    text-align: left;
+}
+.footer-title{
+    text-align: right;
+}
+.footer-title h5{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.copyright{
+    border-top: 1.5px solid
+    rgba(255, 255, 255, 0.1);
+    padding-top: 2.3rem;
+    padding-bottom: 2.3rem;
+}
+
+.hide{
+    display: none;
+}
