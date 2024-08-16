@@ -171,15 +171,14 @@ margin-left: 0;
     font-size: 20px;
     margin-bottom: 20px;
    }
-.app{
-    border-radius: 10px;
-    margin-bottom: 70px;
-}
 
 
-.store:hover{
-    background-color:rgb(154, 35, 35);
-    transform: scale(.8);
+.pricing-card{
+    transition:transform 1s ease, background-color 0.5s ease;
+  }
+.pricing-card:hover{
+    background-color: blueviolet;
+    transform: scale(0.5);
 }
 /* footer */
 .footer-contents{
