@@ -490,21 +490,7 @@ th {
     align-items: center;
   }
 
-  /* .trainer img {
-    width: 270px;
-    height: 180px;
-    border-radius: 18px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    background-size: cover;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  
-  }
-
-  .trainer {
-    color: rgba(255, 255, 255, 0.5);
-  } */
+ 
   .pricing-list
   .pricing-item i{
     color: rgb(230, 83, 60);
@@ -543,6 +529,15 @@ th {
     background-color: black;
   }
   
+
+  .pricing-card{
+    transition:transform 0.5s ease, background-color 0.5s ease;
+  }
+.pricing-card:hover{
+    background-color: blueviolet;
+    transform: scale(1.5);
+}
+
 
 /* footer */
 .footer{
