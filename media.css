@@ -163,6 +163,9 @@ margin-left: 0;
 
 }
 /* app section */
+.pricing-cards-lists{
+    flex-direction: column;
+}
 
 .price-contents{
     font-size: 20px;
@@ -173,12 +176,7 @@ margin-left: 0;
     margin-bottom: 70px;
 }
 
-.app-img img{
-    width: 90%;
-    position: relative;
-    right: 50px;
-    
-}
+
 .store:hover{
     background-color:rgb(154, 35, 35);
     transform: scale(.8);
